@@ -19,7 +19,7 @@ body.sticky-footer .content-wrapper {
 }
 
 body.fixed-nav {
-  padding-top: 56px;
+  /*padding-top: 56px;*/
 }
 
 .content-wrapper {
@@ -366,7 +366,7 @@ body.sidenav-toggled .navbar-sidenav-tooltip.show {
 @media (min-width: 992px) {
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav {
     background: #73378AB3;
-    overflow-y: scroll;
+    /*overflow-y: scroll;*/
   }
   #mainNav.navbar-dark .navbar-collapse .navbar-sidenav li.active a {
     color: white !important;
