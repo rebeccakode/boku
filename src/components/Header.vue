@@ -8,39 +8,36 @@
     <div class="collapse navbar-collapse" id="navbarResponsive">
       <ul class="navbar-nav navbar-sidenav" id="exampleAccordion">
         <li class="header-dropdown">
-          <router-link class="sidebarText" to="home">View info Employee</router-link>
+          <router-link to="home" class="singleText">View info Employee</router-link>
         </li>
 
         <li class="header-dropdown">
-          <profile-drop-down :class="sidebarText" :profileLinks="profileLinks"></profile-drop-down>
+          <profile-drop-down class="sidebarText" :profileLinks="profileLinks"></profile-drop-down>
         </li>
 
         <li class="header-dropdown">
-          <router-link class="sidebarText" to="home">Update Employee Info</router-link>
+          <router-link to="view" class="singleText">Update Employee Info</router-link>
+        </li>
+
+
+        <li class="header-dropdown">
+          <statutory-drop-down class="sidebarText" :statutoryLinks="statutoryLinks"></statutory-drop-down>
         </li>
 
         <li class="header-dropdown">
-          <loan-drop-down :class="sidebarText" :loanLinks="loanLinks"></loan-drop-down>
+          <allowance-drop-down class="sidebarText" :allowanceLinks="allowanceLinks"></allowance-drop-down>
         </li>
 
         <li class="header-dropdown">
-          <statutory-drop-down :class="sidebarText" :statutoryLinks="statutoryLinks"></statutory-drop-down>
+          <redeploy-drop-down class="sidebarText" :redeployLinks="redeployLinks"></redeploy-drop-down>
         </li>
 
         <li class="header-dropdown">
-          <allowance-drop-down :class="sidebarText" :allowanceLinks="allowanceLinks"></allowance-drop-down>
+          <router-link to="#" class="singleText" >Score Care </router-link>
         </li>
 
         <li class="header-dropdown">
-          <redeploy-drop-down :class="sidebarText" :redeployLinks="redeployLinks"></redeploy-drop-down>
-        </li>
-
-        <li class="header-dropdown">
-          <router-link class="sidebarText" to="#">Score Care </router-link>
-        </li>
-
-        <li class="header-dropdown">
-        <pay-drop-down :class="sidebarText" :payLinks="payLinks"></pay-drop-down>
+        <pay-drop-down class="sidebarText" :payLinks="payLinks"></pay-drop-down>
       </li>
 
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Example Pages">
@@ -49,38 +46,15 @@
         </li>
       </ul>
 
-      <!--<ul class="navbar-nav sidenav-toggler">-->
-        <!--<li class="nav-item">-->
-          <!--<a class="nav-link text-center" id="sidenavToggler">-->
-            <!--<i class="fa fa-fw fa-angle-left"></i>-->
-          <!--</a>-->
-        <!--</li>-->
-      <!--</ul>-->
-
-      <div class="header-info active"> <a href="#">Employee Info <br> management </a></div>
-      <div class="header-info" > <a href="#">Enterprise info <br> management </a></div>
-      <div class="header-info"> <a href="#">Recruitments</a></div>
-      <div class="header-info"> <a href="#">Trainings</a></div>
-      <div class="header-info"> <a href="#">Performance <br> reviews</a></div>
-      <div class="header-info"> <a href="#">Payroll <br>management</a></div>
-      <ul class="navbar-nav ml-auto">
-
-        <li class="nav-item">
-          <a class="nav-link" data-toggle="modal" data-target="#exampleModal">
-            <i class="fa fa-fw fa-sign-out"></i>Logout</a>
-        </li>
-      </ul>
     </div>
-
   </nav>
-
 </div>
 </template>
 
 
 <script>
   import ProfileDropDown from './ProfileDropDown'
-  import LoanDropDown from './LoanDropDown'
+  import LoanDropDown from './ProfileDropDown'
   import StatutoryDropDown from  './StatutoryDropDown'
   import AllowanceDropDown from  './AllowanceDropDown'
   import RedeployDropDown from  './RedeployDropDown'
@@ -102,8 +76,8 @@
         },
         dropDown: false,
         profileLinks: [
-          {name: 'View Profile', link: 'viewProfile'},
-          {name: 'Edit Profile', link: 'editProfile'}
+          {name: 'View ', link: 'viewProfile'},
+          {name: 'Update', link: 'updateProfile'}
         ],
         loanLinks: [
           {name: 'View History', link: 'viewHistory'},
@@ -133,8 +107,7 @@
         ]
 
       }
-    },
-
+    }
   }
 </script>
 
@@ -148,17 +121,29 @@
 
   .sidebarText {
     color: antiquewhite;
-    margin-left: 1em;
   }
-
   .sidebarText:hover {
     color: #d39e00;
 
   }
+
+  .singleText {
+    padding: 5px 5px;
+    margin-left: 0.8em;
+  }
+
+  a.singleText {
+    text-decoration: none;
+    color: lemonchiffon;
+  }
+
+  .singleText:hover{
+    color: #d39e00;
+  }
+
   a.sidebarText {
     text-decoration: none;
   }
-
 </style>
 
 

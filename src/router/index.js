@@ -34,10 +34,6 @@ export default new Router({
       component: AddNew
     },
 
-    /*{
-      path: '/remove',
-      name: 'remove',
-      component: Remove
-    }*/
+
   ]
 })

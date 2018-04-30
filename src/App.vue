@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <app-header></app-header>
+      <nav-bar></nav-bar>
     <div class="content-wrapper">
       <div class="container-fluid">
         <!-- Breadcrumbs-->
@@ -37,7 +38,7 @@
               <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
               <div class="modal-footer">
                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
-                <router-link class="btn btn-primary" href="login.html">Logout</router-link>
+                <router-link class="btn btn-primary" to="login.html">Logout</router-link>
               </div>
             </div>
           </div>
@@ -51,9 +52,11 @@
   import AppHeader from './components/Header'
   import AppFooter from './components/Footer'
   import FormSearch from './components/FormSearch'
+  import NavBar from  './components/NavBar'
   export default {
     components: {
       AppHeader,
+      NavBar,
       AppFooter,
       FormSearch
     },

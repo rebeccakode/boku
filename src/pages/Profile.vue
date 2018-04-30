@@ -1,6 +1,5 @@
 <template>
   <div>
-    <h3>Profile Page</h3>
     <employee-form></employee-form>
   </div>
 </template>

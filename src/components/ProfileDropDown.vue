@@ -42,7 +42,6 @@
   li.nav a {
     color: lightgoldenrodyellow;
     text-decoration: none;
-    margin-left: -1em;
   }
 
   li.nav a:hover{
