@@ -1,0 +1,18 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[remote "origin"]
+	url = https://BeckyJP@bitbucket.org/kodehauzteam/hrms.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "bitbucket"]
+	url = https://BeckyJP@bitbucket.org/kodehauzteam/hrms.git
+	fetch = +refs/heads/*:refs/remotes/bitbucket/*
+[pull]
+	rebase = true
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
