@@ -16,7 +16,7 @@
         </li>
 
         <li class="header-dropdown">
-          <router-link to="view" class="singleText">Update Employee Info</router-link>
+          <router-link to="updateInfo" class="singleText">Update Employee Info</router-link>
         </li>
 
 

@@ -1,6 +1,7 @@
 <template>
   <div>
     <employee-form></employee-form>
+    <updateinfo></updateinfo>
   </div>
 </template>
 

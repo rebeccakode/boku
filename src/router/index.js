@@ -4,9 +4,9 @@ import Home from '@/pages/Home'
 import ViewProfile from '@/pages/Profile'
 import GenerateReport from '@/pages/GenerateReport'
 import ViewHistory from '@/pages/ViewHistory'
-import  AddNew from '@/pages/AddNew'
+import  UpdateEmployeeInfo from '@/pages/UpdateEmployeeInfo'
 
-Vue.use(Router)
+Vue.use(Router);
 
 export default new Router({
   mode: 'history',
@@ -17,21 +17,21 @@ export default new Router({
       component: Home
     },
     {
-      path: '/viewProfile',
+      path: 'viewProfile',
       name: 'viewProfile',
       component: ViewProfile
     },
     {
-      path: '/generateReport',
+      path: 'generateReport',
       name: 'generateReport',
       component: GenerateReport
     },
 
 
     {
-      path: '/addNew',
-      name: 'addNew',
-      component: AddNew
+      path: 'updateInfo',
+      name: 'updateInfo',
+      component: UpdateEmployeeInfo
     },
 
 
